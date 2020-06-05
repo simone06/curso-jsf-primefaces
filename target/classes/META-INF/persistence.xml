@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+ http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
+
+   <persistence-unit name="my-pu">   
+     <properties>
+     	<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+        <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/cursojsfprime"/>
+        <property name="javax.persistence.jdbc.user" value="root"/>
+        <property name="javax.persistence.jdbc.password" value="123456"/>    
+		<property name="javax.persistence.schema.generation.database.create-source" value="metadata" />
+<!-- 		usado para inicializar o script para carga dos dados iniciais -->
+<!-- 		<property name="javax.persistence.sql-load-script-source" value="insert.sql"/> -->
+		
+		
+		<property name="hibernate.show_sql" value="true" />
+		<property name="hibernate.format_sql" value="true"/>
+     </properties>
+   </persistence-unit>
+<!--     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property> -->
+<!--     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property> -->
+<!--     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/BD_GESTAOESCOLA</property> -->
+<!--     <property name="hibernate.connection.username">diego.sabino</property> -->
+<!--     <property name="hibernate.connection.password">3F03C0</property> -->
+
+</persistence>

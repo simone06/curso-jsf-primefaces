@@ -1,0 +1,9 @@
+@RequestScoped - > a vida de uma determinada  instancia é criada, quando 
+a requisição é iniciada, e é finalizada quando a requisição termina. 
+
+@ViewScoped -a instancia é criada no momento que uma determinada página é carregada, e termina quando a sessão termina, ou por navegação.
+onde o tempo de vida é maior. 
+
+@SessionScoped -> a instancia da classe é criada no momento em que a sessão é criada, a cada sessão nova
+
+@ApplicatonsScoped -> Só pode ter uma instancia de uma determinada entidade, durante toda a aplicação

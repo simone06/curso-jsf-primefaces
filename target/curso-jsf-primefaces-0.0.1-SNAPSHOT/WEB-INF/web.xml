@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+  <display-name>curso-jsf-primefaces</display-name>
+  
+<!--   configuração da pagina padrão do projeto, onde o tomcat irá reconhecer como pagina principal -->
+  <welcome-file-list>
+   	<welcome-file>index.xhtml</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+<!--    Configuação do estágio do projeto, quando esta como "Development"  exibe mais detalhes ao exibir os erros do jsf -->
+  <context-param>
+		<param-name>javax.faces.PROJECT_STAGE</param-name>
+		<param-value>Development</param-value>
+	</context-param>
+	
+<!-- 	Framework do jsf. Quando "param-value" et´s como "0", está configurado para n guardar cache -->
+	<context-param>
+		<param-name>javax.faces.FACELETS_REFRESH_PERIOD</param-name>
+		<param-value>0</param-value>
+	</context-param>
+  
+	  <resource-env-ref>
+		  <resource-env-ref-name>BeanManager</resource-env-ref-name>
+		  <resource-env-ref-type>javax.enterprise.inject.spi.BeanManager</resource-env-ref-type>  
+	  </resource-env-ref>
+	  
+	  
+	  <listener>
+	  	<listener-class>org.jboss.weld.environment.servlet.Listener</listener-class>
+	  </listener>
+	  
+<!-- Configuração do servlet -->
+	  <servlet>
+		<servlet-name>Faces Servlet</servlet-name>
+		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+
+<!-- Configurando a extensão das páginas -->
+	<servlet-mapping>
+		<servlet-name>Faces Servlet</servlet-name>
+		<url-pattern>*.xhtml</url-pattern>
+	</servlet-mapping>
+</web-app>

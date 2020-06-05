@@ -1,0 +1,12 @@
+D:\Desenvolvimento\workspace\curso-jsf-primefaces\src\main\java\com\estudos\model\Empresa.java
+D:\Desenvolvimento\workspace\curso-jsf-primefaces\src\main\java\com\estudos\controller\EmpresaBean.java
+D:\Desenvolvimento\workspace\curso-jsf-primefaces\src\main\java\com\estudos\util\EntityManagerProducer.java
+D:\Desenvolvimento\workspace\curso-jsf-primefaces\src\main\java\com\estudos\repository\RamoAtividadesRepository.java
+D:\Desenvolvimento\workspace\curso-jsf-primefaces\src\main\java\com\estudos\util\Transacional.java
+D:\Desenvolvimento\workspace\curso-jsf-primefaces\src\main\java\com\estudos\service\EmpresaService.java
+D:\Desenvolvimento\workspace\curso-jsf-primefaces\src\main\java\com\estudos\repository\EmpresasRepository.java
+D:\Desenvolvimento\workspace\curso-jsf-primefaces\src\main\java\com\estudos\controller\GestaoEmpresasBean.java
+D:\Desenvolvimento\workspace\curso-jsf-primefaces\src\main\java\com\estudos\controller\EscopoBean.java
+D:\Desenvolvimento\workspace\curso-jsf-primefaces\src\main\java\com\estudos\model\RamoAtividade.java
+D:\Desenvolvimento\workspace\curso-jsf-primefaces\src\main\java\com\estudos\enums\TipoEmpresa.java
+D:\Desenvolvimento\workspace\curso-jsf-primefaces\src\main\java\com\estudos\util\TransacionalInterceptor.java

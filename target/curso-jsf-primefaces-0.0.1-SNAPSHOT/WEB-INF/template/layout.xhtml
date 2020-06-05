@@ -1,0 +1,61 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@simone06 
+algaworks
+/
+curso-jsf-primefaces-essencial
+6
+727
+ Code
+ Issues 0
+ Pull requests 0 Actions
+ Projects 0
+ Wiki
+ Security 0
+ Insights
+curso-jsf-primefaces-essencial/criando-um-template-com-facelets/src/main/webapp/WEB-INF/template/Layout.xhtml
+@alexandreafon alexandreafon Curso gravado
+2dc1ede on 12 Dec 2016
+34 lines (26 sloc)  650 Bytes
+  
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+ 	xmlns:h="http://xmlns.jcp.org/jsf/html"
+ 	xmlns:f="http://xmlns.jcp.org/jsf/core"
+ 	xmlns:p="http://primefaces.org/ui"
+ 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+
+<meta charset="UTF-8"/>
+<title>Gestão Empresas</title>
+
+<h:outputStylesheet library="algaworks" name="estilo.css" />
+
+</h:head>
+
+<h:body>
+	<header>
+		<h:graphicImage library="algaworks" name="logo.png" />
+	</header>
+	
+	<h2>
+		<ui:insert name="titulo" />
+	</h2>
+
+	<div id="conteudo">		
+		<ui:insert name="conteudo" />	
+	</div>
+	
+	<footer>
+		Curso online "JSF e PrimeFaces Essencial"
+	</footer>
+</h:body>
+
+</html>
+

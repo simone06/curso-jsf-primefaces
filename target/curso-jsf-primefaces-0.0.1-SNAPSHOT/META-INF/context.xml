@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Esse arquivo serve como uma especie de extenção para configuração do tomcat -->
+<Context>
+	<Manager pathname="" />
+	<Resource
+		auth="Container"
+		name="BeanManager"
+		type="javax.enterprise.inject.spi.BeanManager"
+		factory="org.jboss.weld.resource.ManagerObjectFactory"/>
+
+</Context>
+<!-- name="BeanManager" -> informa ao tomcat para deixar disponivel para as aplicaçoes  o "BeanManager (do CDI)"  -->
